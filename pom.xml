@@ -7,14 +7,38 @@
     <groupId>ru.saraev</groupId>
     <artifactId>SpringBot</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dispatcher</module>
+    </modules>
 
     <properties>
-        <java.version>19</java.version>
+        <java.version>11</java.version>
         <encoding.version>UTF-8</encoding.version>
+        <telegram.version>6.1.0</telegram.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>${encoding.version}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding.version}</project.reporting.outputEncoding>
     </properties>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.2</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+    </dependencies>
 </project>
