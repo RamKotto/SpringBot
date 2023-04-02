@@ -1,6 +1,6 @@
 # SpringBot
 
-<h5>To start the bot you need:</h5>
+<h3>To start the bot you need:</h5>
 <p>1) create property file in:  dispatcher/src/main/resources/application.properties</p>
 <p>Set value for fields:</p>
 <p>server.port=YOUR_VALUE</p>
