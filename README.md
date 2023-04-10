@@ -35,3 +35,9 @@ $ docker exec -it rabbitmq /bin/bash
 $ rabbitmqctl add_user userok p@ssw0rd
 $ rabbitmqctl set_user_tags userok administrator
 $ rabbitmqctl set_permissions -p / userok ".*" ".*" ".*"
+
+dispatcher/src/main/resources/application.properties add data:
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=<>
+spring.rabbitmq.password=<>
