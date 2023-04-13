@@ -41,3 +41,5 @@ spring.rabbitmq.host=localhost
 spring.rabbitmq.port=5672
 spring.rabbitmq.username=<>
 spring.rabbitmq.password=<>
+
+ДАННЫЙ РАЗДЕЛ НАХОДИТСЯ В РАЗРАБОТКЕ
